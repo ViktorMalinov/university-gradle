@@ -1,0 +1,67 @@
+[ {
+  "id" : 1,
+  "code" : 10,
+  "name" : "Group 1",
+  "description" : "First group ever... :)",
+  "displayName" : "Display Name AG"
+}, {
+  "id" : 2,
+  "code" : 21,
+  "name" : "Group 2a",
+  "description" : "Secong group ever... :)",
+  "displayName" : "Display Name AG-3"
+}, {
+  "id" : 4,
+  "code" : 20,
+  "name" : "Group 2",
+  "description" : "Secong group ever... :)",
+  "displayName" : "Display Name AG - 2"
+}, {
+  "id" : 5,
+  "code" : 10,
+  "name" : "Group 1",
+  "description" : "First group ever... :)",
+  "displayName" : "Display Name AG"
+}, {
+  "id" : 6,
+  "code" : 20,
+  "name" : "Group 2",
+  "description" : "Secong group ever... :)",
+  "displayName" : "Display Name AG - 2"
+}, {
+  "id" : 7,
+  "code" : 10,
+  "name" : "Group 1",
+  "description" : "First group ever... :)",
+  "displayName" : "Display Name AG"
+}, {
+  "id" : 8,
+  "code" : 20,
+  "name" : "Group 2",
+  "description" : "Secong group ever... :)",
+  "displayName" : "Display Name AG - 2"
+}, {
+  "id" : 9,
+  "code" : 10,
+  "name" : "Group 1",
+  "description" : "First group ever... :)",
+  "displayName" : "Display Name AG"
+}, {
+  "id" : 10,
+  "code" : 20,
+  "name" : "Group 2",
+  "description" : "Secong group ever... :)",
+  "displayName" : "Display Name AG - 2"
+}, {
+  "id" : 11,
+  "code" : 10,
+  "name" : "Group 1",
+  "description" : "First group ever... :)",
+  "displayName" : "Display Name AG"
+}, {
+  "id" : 12,
+  "code" : 20,
+  "name" : "Group 2",
+  "description" : "Secong group ever... :)",
+  "displayName" : "Display Name AG - 2"
+} ]
