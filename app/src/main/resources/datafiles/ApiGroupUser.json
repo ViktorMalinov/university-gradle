@@ -188,4 +188,536 @@
     "password" : null,
     "username" : null
   }
+}, {
+  "id" : 11,
+  "apiGroup" : {
+    "id" : 1,
+    "code" : 10,
+    "name" : "Group 1",
+    "description" : "First group ever... :)",
+    "displayName" : "Display Name AG"
+  },
+  "apiUser" : {
+    "id" : 1,
+    "code" : 10,
+    "name" : null,
+    "description" : "First group ever... :)",
+    "displayName" : "Group 1",
+    "email" : null,
+    "password" : null,
+    "username" : null
+  }
+}, {
+  "id" : 12,
+  "apiGroup" : {
+    "id" : 2,
+    "code" : 21,
+    "name" : "Group 2a",
+    "description" : "Secong group ever... :)",
+    "displayName" : "Display Name AG-3"
+  },
+  "apiUser" : {
+    "id" : 2,
+    "code" : 21,
+    "name" : null,
+    "description" : "Secong group ever... :)",
+    "displayName" : "Group 2a",
+    "email" : null,
+    "password" : null,
+    "username" : null
+  }
+}, {
+  "id" : 13,
+  "apiGroup" : {
+    "id" : 1,
+    "code" : 10,
+    "name" : "Group 1",
+    "description" : "First group ever... :)",
+    "displayName" : "Display Name AG"
+  },
+  "apiUser" : {
+    "id" : 1,
+    "code" : 10,
+    "name" : null,
+    "description" : "First group ever... :)",
+    "displayName" : "Group 1",
+    "email" : null,
+    "password" : null,
+    "username" : null
+  }
+}, {
+  "id" : 14,
+  "apiGroup" : {
+    "id" : 2,
+    "code" : 21,
+    "name" : "Group 2a",
+    "description" : "Secong group ever... :)",
+    "displayName" : "Display Name AG-3"
+  },
+  "apiUser" : {
+    "id" : 2,
+    "code" : 21,
+    "name" : null,
+    "description" : "Secong group ever... :)",
+    "displayName" : "Group 2a",
+    "email" : null,
+    "password" : null,
+    "username" : null
+  }
+}, {
+  "id" : 15,
+  "apiGroup" : {
+    "id" : 1,
+    "code" : 10,
+    "name" : "Group 1",
+    "description" : "First group ever... :)",
+    "displayName" : "Display Name AG"
+  },
+  "apiUser" : {
+    "id" : 1,
+    "code" : 10,
+    "name" : null,
+    "description" : "First group ever... :)",
+    "displayName" : "Group 1",
+    "email" : null,
+    "password" : null,
+    "username" : null
+  }
+}, {
+  "id" : 16,
+  "apiGroup" : {
+    "id" : 2,
+    "code" : 21,
+    "name" : "Group 2a",
+    "description" : "Secong group ever... :)",
+    "displayName" : "Display Name AG-3"
+  },
+  "apiUser" : {
+    "id" : 2,
+    "code" : 21,
+    "name" : null,
+    "description" : "Secong group ever... :)",
+    "displayName" : "Group 2a",
+    "email" : null,
+    "password" : null,
+    "username" : null
+  }
+}, {
+  "id" : 17,
+  "apiGroup" : {
+    "id" : 1,
+    "code" : 10,
+    "name" : "Group 1",
+    "description" : "First group ever... :)",
+    "displayName" : "Display Name AG"
+  },
+  "apiUser" : {
+    "id" : 1,
+    "code" : 10,
+    "name" : null,
+    "description" : "First group ever... :)",
+    "displayName" : "Group 1",
+    "email" : null,
+    "password" : null,
+    "username" : null
+  }
+}, {
+  "id" : 18,
+  "apiGroup" : {
+    "id" : 2,
+    "code" : 21,
+    "name" : "Group 2a",
+    "description" : "Secong group ever... :)",
+    "displayName" : "Display Name AG-3"
+  },
+  "apiUser" : {
+    "id" : 2,
+    "code" : 21,
+    "name" : null,
+    "description" : "Secong group ever... :)",
+    "displayName" : "Group 2a",
+    "email" : null,
+    "password" : null,
+    "username" : null
+  }
+}, {
+  "id" : 19,
+  "apiGroup" : {
+    "id" : 1,
+    "code" : 10,
+    "name" : "Group 1",
+    "description" : "First group ever... :)",
+    "displayName" : "Display Name AG"
+  },
+  "apiUser" : {
+    "id" : 1,
+    "code" : 10,
+    "name" : null,
+    "description" : "First group ever... :)",
+    "displayName" : "Group 1",
+    "email" : null,
+    "password" : null,
+    "username" : null
+  }
+}, {
+  "id" : 20,
+  "apiGroup" : {
+    "id" : 2,
+    "code" : 21,
+    "name" : "Group 2a",
+    "description" : "Secong group ever... :)",
+    "displayName" : "Display Name AG-3"
+  },
+  "apiUser" : {
+    "id" : 2,
+    "code" : 21,
+    "name" : null,
+    "description" : "Secong group ever... :)",
+    "displayName" : "Group 2a",
+    "email" : null,
+    "password" : null,
+    "username" : null
+  }
+}, {
+  "id" : 21,
+  "apiGroup" : {
+    "id" : 1,
+    "code" : 10,
+    "name" : "Group 1",
+    "description" : "First group ever... :)",
+    "displayName" : "Display Name AG"
+  },
+  "apiUser" : {
+    "id" : 1,
+    "code" : 10,
+    "name" : null,
+    "description" : "First group ever... :)",
+    "displayName" : "Group 1",
+    "email" : null,
+    "password" : null,
+    "username" : null
+  }
+}, {
+  "id" : 22,
+  "apiGroup" : {
+    "id" : 2,
+    "code" : 21,
+    "name" : "Group 2a",
+    "description" : "Secong group ever... :)",
+    "displayName" : "Display Name AG-3"
+  },
+  "apiUser" : {
+    "id" : 2,
+    "code" : 21,
+    "name" : null,
+    "description" : "Secong group ever... :)",
+    "displayName" : "Group 2a",
+    "email" : null,
+    "password" : null,
+    "username" : null
+  }
+}, {
+  "id" : 23,
+  "apiGroup" : {
+    "id" : 1,
+    "code" : 10,
+    "name" : "Group 1",
+    "description" : "First group ever... :)",
+    "displayName" : "Display Name AG"
+  },
+  "apiUser" : {
+    "id" : 1,
+    "code" : 10,
+    "name" : null,
+    "description" : "First group ever... :)",
+    "displayName" : "Group 1",
+    "email" : null,
+    "password" : null,
+    "username" : null
+  }
+}, {
+  "id" : 24,
+  "apiGroup" : {
+    "id" : 2,
+    "code" : 21,
+    "name" : "Group 2a",
+    "description" : "Secong group ever... :)",
+    "displayName" : "Display Name AG-3"
+  },
+  "apiUser" : {
+    "id" : 2,
+    "code" : 21,
+    "name" : null,
+    "description" : "Secong group ever... :)",
+    "displayName" : "Group 2a",
+    "email" : null,
+    "password" : null,
+    "username" : null
+  }
+}, {
+  "id" : 25,
+  "apiGroup" : {
+    "id" : 1,
+    "code" : 10,
+    "name" : "Group 1",
+    "description" : "First group ever... :)",
+    "displayName" : "Display Name AG"
+  },
+  "apiUser" : {
+    "id" : 1,
+    "code" : 10,
+    "name" : null,
+    "description" : "First group ever... :)",
+    "displayName" : "Group 1",
+    "email" : null,
+    "password" : null,
+    "username" : null
+  }
+}, {
+  "id" : 26,
+  "apiGroup" : {
+    "id" : 2,
+    "code" : 21,
+    "name" : "Group 2a",
+    "description" : "Secong group ever... :)",
+    "displayName" : "Display Name AG-3"
+  },
+  "apiUser" : {
+    "id" : 2,
+    "code" : 21,
+    "name" : null,
+    "description" : "Secong group ever... :)",
+    "displayName" : "Group 2a",
+    "email" : null,
+    "password" : null,
+    "username" : null
+  }
+}, {
+  "id" : 27,
+  "apiGroup" : {
+    "id" : 1,
+    "code" : 10,
+    "name" : "Group 1",
+    "description" : "First group ever... :)",
+    "displayName" : "Display Name AG"
+  },
+  "apiUser" : {
+    "id" : 1,
+    "code" : 10,
+    "name" : null,
+    "description" : "First group ever... :)",
+    "displayName" : "Group 1",
+    "email" : null,
+    "password" : null,
+    "username" : null
+  }
+}, {
+  "id" : 28,
+  "apiGroup" : {
+    "id" : 2,
+    "code" : 21,
+    "name" : "Group 2a",
+    "description" : "Secong group ever... :)",
+    "displayName" : "Display Name AG-3"
+  },
+  "apiUser" : {
+    "id" : 2,
+    "code" : 21,
+    "name" : null,
+    "description" : "Secong group ever... :)",
+    "displayName" : "Group 2a",
+    "email" : null,
+    "password" : null,
+    "username" : null
+  }
+}, {
+  "id" : 29,
+  "apiGroup" : {
+    "id" : 1,
+    "code" : 10,
+    "name" : "Group 1",
+    "description" : "First group ever... :)",
+    "displayName" : "Display Name AG"
+  },
+  "apiUser" : {
+    "id" : 1,
+    "code" : 10,
+    "name" : null,
+    "description" : "First group ever... :)",
+    "displayName" : "Group 1",
+    "email" : null,
+    "password" : null,
+    "username" : null
+  }
+}, {
+  "id" : 30,
+  "apiGroup" : {
+    "id" : 2,
+    "code" : 21,
+    "name" : "Group 2a",
+    "description" : "Secong group ever... :)",
+    "displayName" : "Display Name AG-3"
+  },
+  "apiUser" : {
+    "id" : 2,
+    "code" : 21,
+    "name" : null,
+    "description" : "Secong group ever... :)",
+    "displayName" : "Group 2a",
+    "email" : null,
+    "password" : null,
+    "username" : null
+  }
+}, {
+  "id" : 31,
+  "apiGroup" : {
+    "id" : 1,
+    "code" : 10,
+    "name" : "Group 1",
+    "description" : "First group ever... :)",
+    "displayName" : "Display Name AG"
+  },
+  "apiUser" : {
+    "id" : 1,
+    "code" : 10,
+    "name" : null,
+    "description" : "First group ever... :)",
+    "displayName" : "Group 1",
+    "email" : null,
+    "password" : null,
+    "username" : null
+  }
+}, {
+  "id" : 32,
+  "apiGroup" : {
+    "id" : 2,
+    "code" : 21,
+    "name" : "Group 2a",
+    "description" : "Secong group ever... :)",
+    "displayName" : "Display Name AG-3"
+  },
+  "apiUser" : {
+    "id" : 2,
+    "code" : 21,
+    "name" : null,
+    "description" : "Secong group ever... :)",
+    "displayName" : "Group 2a",
+    "email" : null,
+    "password" : null,
+    "username" : null
+  }
+}, {
+  "id" : 33,
+  "apiGroup" : {
+    "id" : 1,
+    "code" : 10,
+    "name" : "Group 1",
+    "description" : "First group ever... :)",
+    "displayName" : "Display Name AG"
+  },
+  "apiUser" : {
+    "id" : 1,
+    "code" : 10,
+    "name" : null,
+    "description" : "First group ever... :)",
+    "displayName" : "Group 1",
+    "email" : null,
+    "password" : null,
+    "username" : null
+  }
+}, {
+  "id" : 34,
+  "apiGroup" : {
+    "id" : 2,
+    "code" : 21,
+    "name" : "Group 2a",
+    "description" : "Secong group ever... :)",
+    "displayName" : "Display Name AG-3"
+  },
+  "apiUser" : {
+    "id" : 2,
+    "code" : 21,
+    "name" : null,
+    "description" : "Secong group ever... :)",
+    "displayName" : "Group 2a",
+    "email" : null,
+    "password" : null,
+    "username" : null
+  }
+}, {
+  "id" : 35,
+  "apiGroup" : {
+    "id" : 1,
+    "code" : 10,
+    "name" : "Group 1",
+    "description" : "First group ever... :)",
+    "displayName" : "Display Name AG"
+  },
+  "apiUser" : {
+    "id" : 1,
+    "code" : 10,
+    "name" : null,
+    "description" : "First group ever... :)",
+    "displayName" : "Group 1",
+    "email" : null,
+    "password" : null,
+    "username" : null
+  }
+}, {
+  "id" : 36,
+  "apiGroup" : {
+    "id" : 2,
+    "code" : 21,
+    "name" : "Group 2a",
+    "description" : "Secong group ever... :)",
+    "displayName" : "Display Name AG-3"
+  },
+  "apiUser" : {
+    "id" : 2,
+    "code" : 21,
+    "name" : null,
+    "description" : "Secong group ever... :)",
+    "displayName" : "Group 2a",
+    "email" : null,
+    "password" : null,
+    "username" : null
+  }
+}, {
+  "id" : 37,
+  "apiGroup" : {
+    "id" : 1,
+    "code" : 10,
+    "name" : "Group 1",
+    "description" : "First group ever... :)",
+    "displayName" : "Display Name AG"
+  },
+  "apiUser" : {
+    "id" : 1,
+    "code" : 10,
+    "name" : null,
+    "description" : "First group ever... :)",
+    "displayName" : "Group 1",
+    "email" : null,
+    "password" : null,
+    "username" : null
+  }
+}, {
+  "id" : 38,
+  "apiGroup" : {
+    "id" : 2,
+    "code" : 21,
+    "name" : "Group 2a",
+    "description" : "Secong group ever... :)",
+    "displayName" : "Display Name AG-3"
+  },
+  "apiUser" : {
+    "id" : 2,
+    "code" : 21,
+    "name" : null,
+    "description" : "Secong group ever... :)",
+    "displayName" : "Group 2a",
+    "email" : null,
+    "password" : null,
+    "username" : null
+  }
 } ]

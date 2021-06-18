@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.log4j.Logger;
+
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.util.DefaultPrettyPrinter;
 import com.fasterxml.jackson.databind.JsonMappingException;
@@ -19,7 +21,7 @@ public abstract class BaseRepoManagerImpl<PK, ENT> implements BaseRepoManager<PK
 	protected abstract Map<PK, ENT> getDataSource();
 	protected abstract String getPath();
 	protected abstract Class<?> getClazz(); 
-
+	protected static Logger logger = Logger.getLogger(BaseRepoManagerImpl.class);
 	
 	@Override
 	public ENT insert(ENT entity) {
@@ -27,24 +29,36 @@ public abstract class BaseRepoManagerImpl<PK, ENT> implements BaseRepoManager<PK
 		getDataSource().put(getPk(entity), entity);
 		
 		persist();
+		
+		logger.info("ISERTING  ---> " + entity.toString());
+		
 		return entity;
 	}
 
 	@Override
 	public ENT select(PK id) {
 		ENT entity = getDataSource().get(id);
+
+		logger.info("SELECTING ---> ID: " + id.toString() + ", object: " + entity.toString());
+		
 		return entity;	
 	}
 
 	@Override
 	public void update(ENT entity) {
 		getDataSource().put(getPk(entity), entity);
+		
+		logger.info("UPDATING  ---> ID: " + getPk(entity).toString() + ", object: " + entity.toString());
+		
 		persist();
 	}
 
 	@Override
 	public void delete(PK id) {
 		getDataSource().remove(id);
+		
+		logger.info("DELETING  ---> ID: " + id.toString() );
+		
 		persist();
 	}
 
