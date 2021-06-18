@@ -70,4 +70,22 @@
   "email" : null,
   "password" : null,
   "username" : null
+}, {
+  "id" : 9,
+  "code" : 10,
+  "name" : null,
+  "description" : "First group ever... :)",
+  "displayName" : "Group 1",
+  "email" : null,
+  "password" : null,
+  "username" : null
+}, {
+  "id" : 10,
+  "code" : 20,
+  "name" : null,
+  "description" : "Secong group ever... :)",
+  "displayName" : "Group 2",
+  "email" : null,
+  "password" : null,
+  "username" : null
 } ]

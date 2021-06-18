@@ -42,4 +42,26 @@
     "name" : "Group 2a",
     "description" : "Secong group ever... :)"
   }
+}, {
+  "id" : 5,
+  "code" : 10,
+  "name" : "Group 1",
+  "description" : "First group ever... :)",
+  "faculty" : {
+    "id" : 1,
+    "code" : 10,
+    "name" : "Group 1",
+    "description" : "First group ever... :)"
+  }
+}, {
+  "id" : 6,
+  "code" : 20,
+  "name" : "Group 2",
+  "description" : "Secong group ever... :)",
+  "faculty" : {
+    "id" : 2,
+    "code" : 21,
+    "name" : "Group 2a",
+    "description" : "Secong group ever... :)"
+  }
 } ]

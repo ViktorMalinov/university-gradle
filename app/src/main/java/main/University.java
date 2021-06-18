@@ -36,9 +36,8 @@ public class University {
         String absolutePath = resourceDirectory.toFile().getAbsolutePath();
         
         System.out.println(absolutePath);
-        
-        System.out.println("------------------------------------------------------");
 		*/
+        System.out.println("------------------------------------------------------");
 		
 		apiGroupTest();
 		ApiUserTest();
