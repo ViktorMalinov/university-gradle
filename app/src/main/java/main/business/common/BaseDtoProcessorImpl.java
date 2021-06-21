@@ -1,5 +1,7 @@
 package main.business.common;
 
+import main.common.UniversityBaseException;
+import main.common.Utils;
 import main.dataaccess.common.BaseDao;
 import main.dataaccess.common.Persistent;
 import main.service.common.BaseDto;
@@ -22,12 +24,23 @@ public class BaseDtoProcessorImpl<
 	
 	@Override
 	public OUT create(IN param) throws Exception {
-		ENT entity = paramTransformer.transform(param); 
+		try {
+			ENT entity = paramTransformer.transform(param); 
+			
+			entity = dao.create(entity);
+			
+			OUT result = resultTransformer.transform(entity);
+			return result;
+			
+		}
+		catch (UniversityBaseException e) {
+			
+			Utils.log(e.getErrorMessage(), e.getErrCode());
+			
+			throw e;
+			//return null;
+		}
 		
-		entity = dao.create(entity);
-		
-		OUT result = resultTransformer.transform(entity);
-		return result;	
 	}
 
 	@Override

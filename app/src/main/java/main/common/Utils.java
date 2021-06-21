@@ -4,6 +4,8 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Set;
 
+import org.apache.log4j.Logger;
+
 public class Utils {
 	
 	public static Long getNextId(Set<Long> set) {
@@ -21,6 +23,29 @@ public class Utils {
         String absolutePath = resourceDirectory.toFile().getAbsolutePath();
          
         return absolutePath;
+		
+	}
+	
+	public static void log(String errorMessage, ErrCode errCode) {
+		
+		Logger logger = Logger.getLogger(Utils.class);
+		
+		switch(errCode) {
+		
+			case EMPTYSTRING:
+				logger.error("***** " + errorMessage + " *****");
+				break;
+			case FILENOTFOUND:
+				logger.error("***** " + errorMessage + " *****");
+				break;
+			case NULLOBJECT:
+				logger.error("***** " + errorMessage + " *****");
+				break;
+			default:
+				logger.error("--- UNKNOWN ERROR CODE: " + errorMessage);
+				break;
+		}
+
 		
 	}
 	

@@ -372,4 +372,70 @@
     "name" : "Group 2a",
     "description" : "Secong group ever... :)"
   }
+}, {
+  "id" : 35,
+  "code" : 10,
+  "name" : "Group 1",
+  "description" : "First group ever... :)",
+  "faculty" : {
+    "id" : 1,
+    "code" : 10,
+    "name" : "Group 1",
+    "description" : "First group ever... :)"
+  }
+}, {
+  "id" : 36,
+  "code" : 20,
+  "name" : "Group 2",
+  "description" : "Secong group ever... :)",
+  "faculty" : {
+    "id" : 2,
+    "code" : 21,
+    "name" : "Group 2a",
+    "description" : "Secong group ever... :)"
+  }
+}, {
+  "id" : 37,
+  "code" : 10,
+  "name" : "Group 1",
+  "description" : "First group ever... :)",
+  "faculty" : {
+    "id" : 1,
+    "code" : 10,
+    "name" : "Group 1",
+    "description" : "First group ever... :)"
+  }
+}, {
+  "id" : 38,
+  "code" : 20,
+  "name" : "Group 2",
+  "description" : "Secong group ever... :)",
+  "faculty" : {
+    "id" : 2,
+    "code" : 21,
+    "name" : "Group 2a",
+    "description" : "Secong group ever... :)"
+  }
+}, {
+  "id" : 39,
+  "code" : 10,
+  "name" : "Group 1",
+  "description" : "First group ever... :)",
+  "faculty" : {
+    "id" : 1,
+    "code" : 10,
+    "name" : "Group 1",
+    "description" : "First group ever... :)"
+  }
+}, {
+  "id" : 40,
+  "code" : 20,
+  "name" : "Group 2",
+  "description" : "Secong group ever... :)",
+  "faculty" : {
+    "id" : 2,
+    "code" : 21,
+    "name" : "Group 2a",
+    "description" : "Secong group ever... :)"
+  }
 } ]

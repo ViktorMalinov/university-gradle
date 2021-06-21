@@ -268,4 +268,40 @@
   "name" : "Group 2",
   "description" : "Secong group ever... :)",
   "displayName" : "Display Name AG - 2"
+}, {
+  "id" : 47,
+  "code" : 10,
+  "name" : "Group 1",
+  "description" : "First group ever... :)",
+  "displayName" : "Display Name AG"
+}, {
+  "id" : 48,
+  "code" : 20,
+  "name" : "Group 2",
+  "description" : "Secong group ever... :)",
+  "displayName" : "Display Name AG - 2"
+}, {
+  "id" : 49,
+  "code" : 10,
+  "name" : "Group 1",
+  "description" : "First group ever... :)",
+  "displayName" : "Display Name AG"
+}, {
+  "id" : 50,
+  "code" : 20,
+  "name" : "Group 2",
+  "description" : "Secong group ever... :)",
+  "displayName" : "Display Name AG - 2"
+}, {
+  "id" : 51,
+  "code" : 10,
+  "name" : "Group 1",
+  "description" : "First group ever... :)",
+  "displayName" : "Display Name AG"
+}, {
+  "id" : 52,
+  "code" : 20,
+  "name" : "Group 2",
+  "description" : "Secong group ever... :)",
+  "displayName" : "Display Name AG - 2"
 } ]
