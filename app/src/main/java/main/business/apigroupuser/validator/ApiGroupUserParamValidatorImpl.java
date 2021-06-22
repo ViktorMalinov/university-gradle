@@ -1,6 +1,9 @@
 package main.business.apigroupuser.validator;
 
 import main.business.common.BaseParamValidatorImpl;
+import main.common.Constants;
+import main.common.ErrCode;
+import main.common.UniversityBaseException;
 import main.dataaccess.apigroup.dao.ApiGroup;
 import main.dataaccess.apigroup.dao.ApiGroupDao;
 import main.dataaccess.apigroup.dao.ApiGroupDaoHMapImpl;
@@ -18,11 +21,15 @@ public class ApiGroupUserParamValidatorImpl extends BaseParamValidatorImpl <ApiG
 	public void customValidate(ApiGroupUserParam param) throws Exception {
 		
 		if (param.getApiGroupId() == null) {
-			throw new Exception("The object you want to manipulate was not found!");
+			throw new UniversityBaseException( String.format(Constants.NULLOBJECTMESSAGEFORMATTED, "Api group ID","Api group user")
+					  + " ----> [ " + this.toString() + " ]", 
+					ErrCode.NULLOBJECT );
 		}		
 
 		if (param.getApiUserId() == null) {
-			throw new Exception("The object you want to manipulate was not found!");
+			throw new UniversityBaseException( String.format(Constants.NULLOBJECTMESSAGEFORMATTED, "Api user ID","Api group user")
+					  + " ----> [ " + this.toString() + " ]", 
+					ErrCode.NULLOBJECT );
 		}		
 
 		ApiGroup apiGroup = apiGroupDao.get(param.getApiGroupId());
@@ -30,11 +37,15 @@ public class ApiGroupUserParamValidatorImpl extends BaseParamValidatorImpl <ApiG
 
 		
 		if (apiGroup == null) {
-			throw new Exception("The object you want to manipulate was not found!");
+			throw new UniversityBaseException( String.format(Constants.NULLOBJECTMESSAGEFORMATTED, "Api group","Api group user")
+					  + " ----> [ " + this.toString() + " ]", 
+					ErrCode.NULLOBJECT );
 		}
 		
 		if (apiUser == null) {
-			throw new Exception("The object you want to manipulate was not found!");
+			throw new UniversityBaseException( String.format(Constants.NULLOBJECTMESSAGEFORMATTED, "Api user","Api group user")
+					  + " ----> [ " + this.toString() + " ]", 
+					ErrCode.NULLOBJECT );
 		}
 		
 

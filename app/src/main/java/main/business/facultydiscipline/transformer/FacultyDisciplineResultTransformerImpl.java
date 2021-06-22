@@ -1,6 +1,9 @@
 package main.business.facultydiscipline.transformer;
 
 import main.business.common.BaseDtoResultTransformerImpl;
+import main.common.Constants;
+import main.common.ErrCode;
+import main.common.UniversityBaseException;
 import main.dataaccess.facultydiscipline.dao.FacultyDiscipline;
 import main.service.facultydiscipline.FacultyDisciplineResult;
 
@@ -16,19 +19,28 @@ public class FacultyDisciplineResultTransformerImpl
 	protected void setProperties(FacultyDiscipline entity, FacultyDisciplineResult result) throws Exception {
 
 		if (entity.getDiscipline() == null) {
-			throw new Exception("The object Discipline was NOT found!");
+			throw new UniversityBaseException( String.format(Constants.NULLOBJECTMESSAGEFORMATTED, "Discipline","Faculty Discipline")
+					  + " ----> [ " + this.toString() + " ]", 
+					ErrCode.NULLOBJECT );
+			
 		}
 		
-		if (entity.getDiscipline().getName().isEmpty()) {
-			throw new Exception("The Discipline NAME is empty!");
+		if (entity.getDiscipline().getName() == null) {
+			throw new UniversityBaseException( String.format(Constants.NULLOBJECTMESSAGEFORMATTED, "Discipline name","Discipline")
+					  + " ----> [ " + this.toString() + " ]", 
+					ErrCode.NULLOBJECT );
 		}
 		
 		if (entity.getFaculty() == null) {
-			throw new Exception("The object Faculty was NOT found!");
+			throw new UniversityBaseException( String.format(Constants.NULLOBJECTMESSAGEFORMATTED, "Faculty","Faculty Discipline")
+					  + " ----> [ " + this.toString() + " ]", 
+					ErrCode.NULLOBJECT );
 		}
 		
-		if (entity.getFaculty().getName().isEmpty()) {
-			throw new Exception("The Faculty NAME is empty!");
+		if (entity.getFaculty().getName() == null) {
+			throw new UniversityBaseException( String.format(Constants.NULLOBJECTMESSAGEFORMATTED, "Faculty name","Faculty")
+					  + " ----> [ " + this.toString() + " ]", 
+					ErrCode.NULLOBJECT );
 		}
 		
 				

@@ -1,6 +1,9 @@
 package main.business.facultydiscipline.validator;
 
 import main.business.common.BaseParamValidatorImpl;
+import main.common.Constants;
+import main.common.ErrCode;
+import main.common.UniversityBaseException;
 import main.dataaccess.discipline.dao.Discipline;
 import main.dataaccess.discipline.dao.DisciplineDao;
 import main.dataaccess.discipline.dao.DisciplineDaoHMapImpl;
@@ -18,22 +21,30 @@ public class FacultyDisciplineParamValidatorImpl extends BaseParamValidatorImpl 
 	public void customValidate(FacultyDisciplineParam param) throws Exception {
 		
 		if (param.getDisciplineId() == null) {
-			throw new Exception("The object you want to manipulate was not found!");
+			throw new UniversityBaseException( String.format(Constants.NULLOBJECTMESSAGEFORMATTED, "Discipline ID","Faculty Discipline")
+					  + " ----> [ " + this.toString() + " ]", 
+					ErrCode.NULLOBJECT );
 		}		
 
 		if (param.getFacultyId() == null) {
-			throw new Exception("The object you want to manipulate was not found!");
+			throw new UniversityBaseException( String.format(Constants.NULLOBJECTMESSAGEFORMATTED, "Faculty ID","Faculty Discipline")
+					  + " ----> [ " + this.toString() + " ]", 
+					ErrCode.NULLOBJECT );
 		}		
 
 		Discipline discipline = disciplineDao.get(param.getDisciplineId());
 		Faculty faculty = facultyDao.get(param.getFacultyId());
 		
 		if (discipline == null) {
-			throw new Exception("The Deiscipline DAO was NOT found!");
+			throw new UniversityBaseException( String.format(Constants.NULLOBJECTMESSAGEFORMATTED, "Discipline","Faculty Discipline")
+					  + " ----> [ " + this.toString() + " ]", 
+					ErrCode.NULLOBJECT );
 		}
 		
 		if (faculty == null) {
-			throw new Exception("The Faculty DAO was NOT found!");
+			throw new UniversityBaseException( String.format(Constants.NULLOBJECTMESSAGEFORMATTED, "Faculty","Faculty Discipline")
+					  + " ----> [ " + this.toString() + " ]", 
+					ErrCode.NULLOBJECT );
 		}
 		
 

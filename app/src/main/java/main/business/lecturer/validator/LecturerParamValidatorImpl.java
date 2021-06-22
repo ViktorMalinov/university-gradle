@@ -1,6 +1,9 @@
 package main.business.lecturer.validator;
 
 import main.business.common.BaseParamValidatorImpl;
+import main.common.Constants;
+import main.common.ErrCode;
+import main.common.UniversityBaseException;
 import main.dataaccess.apiuser.dao.ApiUser;
 import main.dataaccess.apiuser.dao.ApiUserDao;
 import main.dataaccess.apiuser.dao.ApiUserDaoHMapImpl;
@@ -18,22 +21,30 @@ public class LecturerParamValidatorImpl extends BaseParamValidatorImpl <Lecturer
 	public void customValidate(LecturerParam param) throws Exception {
 
 		if (param.getApiUserId() == null) {
-			throw new Exception("The object you want to manipulate was not found!");
+			throw new UniversityBaseException( String.format(Constants.NULLOBJECTMESSAGEFORMATTED, "Api User ID","Lecturer")
+					  + " ----> [ " + this.toString() + " ]", 
+					ErrCode.NULLOBJECT );
 		}		
 
 		if (param.getDepartmentId() == null) {
-			throw new Exception("The object you want to manipulate was not found!");
+			throw new UniversityBaseException( String.format(Constants.NULLOBJECTMESSAGEFORMATTED, "Department ID","Lecturer")
+					  + " ----> [ " + this.toString() + " ]", 
+					ErrCode.NULLOBJECT );
 		}		
 
 		Department department = departmentDao.get(param.getDepartmentId());
 		ApiUser apiUser = apiUserDao.get(param.getApiUserId());
 		
 		if (department == null) {
-			throw new Exception("The object you want to manipulate was not found!");
+			throw new UniversityBaseException( String.format(Constants.NULLOBJECTMESSAGEFORMATTED, "Department","Lecturer")
+					  + " ----> [ " + this.toString() + " ]", 
+					ErrCode.NULLOBJECT );
 		}
 		
 		if (apiUser == null) {
-			throw new Exception("The object you want to manipulate was not found!");
+			throw new UniversityBaseException( String.format(Constants.NULLOBJECTMESSAGEFORMATTED, "Api User","Lecturer")
+					  + " ----> [ " + this.toString() + " ]", 
+					ErrCode.NULLOBJECT );
 		}
 
 	}

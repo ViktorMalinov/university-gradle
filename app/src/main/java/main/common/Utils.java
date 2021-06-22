@@ -6,6 +6,11 @@ import java.util.Set;
 
 import org.apache.log4j.Logger;
 
+
+
+
+
+
 public class Utils {
 	
 	public static Long getNextId(Set<Long> set) {
@@ -17,6 +22,7 @@ public class Utils {
 		
 		return id;
 	}
+
 
 	public static String getResourceFolder() {
 		Path resourceDirectory = Paths.get("src","main","resources");

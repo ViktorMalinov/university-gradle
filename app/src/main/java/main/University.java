@@ -77,9 +77,7 @@ public class University {
 		param.setName("Group 1");
 		param.setDescription("First group ever... :)");
 		param.setDisplayName("Display Name AG");
-		
-		apiGroup.create(null);
-		
+		//apiGroup.create(null);
 		apiGroup.create(param);
 
 		param.setCode(20L);
@@ -129,6 +127,7 @@ public class University {
 		System.out.println("------ ApiGroupUser TEST ----------");
 		// create
 		//param.setId(id);
+		
 		param.setApiGroupId(1L);
 		param.setApiUserId(1L);
 		apiGroupUser.create(param);

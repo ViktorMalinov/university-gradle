@@ -24,36 +24,32 @@ public class BaseDtoProcessorImpl<
 	
 	@Override
 	public OUT create(IN param) throws Exception {
-		try {
+		try {  // ONLY FOR TEST !!!
+
 			ENT entity = paramTransformer.transform(param); 
 			
 			entity = dao.create(entity);
 			
 			OUT result = resultTransformer.transform(entity);
 			return result;
-			
 		}
 		catch (UniversityBaseException e) {
-			
-			Utils.log(e.getErrorMessage(), e.getErrCode());
-			
+			Utils.log(e.getMessage(), e.getErrCode());
 			throw e;
-			//return null;
 		}
-		
 	}
 
 	@Override
 	public OUT get(PK id) throws Exception {
-		ENT entity = dao.get(id);
-		OUT result = resultTransformer.transform(entity);
-		return result;
+			ENT entity = dao.get(id);
+			OUT result = resultTransformer.transform(entity);
+			return result;
 	}
 
 	@Override
 	public void update(IN param) throws Exception {
-		ENT entity = paramTransformer.transform(param);
-		dao.update(entity);
+			ENT entity = paramTransformer.transform(param);
+			dao.update(entity);
 	}
 
 	@Override

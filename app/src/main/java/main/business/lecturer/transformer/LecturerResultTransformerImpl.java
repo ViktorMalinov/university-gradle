@@ -1,6 +1,9 @@
 package main.business.lecturer.transformer;
 
 import main.business.common.BaseResultTransformerImpl;
+import main.common.Constants;
+import main.common.ErrCode;
+import main.common.UniversityBaseException;
 import main.dataaccess.lecturer.dao.Lecturer;
 import main.service.lecturer.LecturerResult;
 
@@ -17,19 +20,27 @@ public class LecturerResultTransformerImpl
 		result.setFamilyName(entity.getFamilyName());
 		
 		if (entity.getDepartment() == null) {
-			throw new Exception("The object Department was NOT found!");
+			throw new UniversityBaseException( String.format(Constants.NULLOBJECTMESSAGEFORMATTED, "Department","Lecturer")
+					  + " ----> [ " + this.toString() + " ]", 
+					ErrCode.NULLOBJECT );
 		}
 		
-		if (entity.getDepartment().getName().isEmpty()) {
-			throw new Exception("The Department NAME is empty!");
+		if (entity.getDepartment().getName() == null) {
+			throw new UniversityBaseException( String.format(Constants.NULLOBJECTMESSAGEFORMATTED, "Department name","Department")
+					  + " ----> [ " + this.toString() + " ]", 
+					ErrCode.NULLOBJECT );
 		}
 		
 		if (entity.getApiUser() == null) {
-			throw new Exception("The object API User was NOT found!");
+			throw new UniversityBaseException( String.format(Constants.NULLOBJECTMESSAGEFORMATTED, "API User","Lecturer")
+					  + " ----> [ " + this.toString() + " ]", 
+					ErrCode.NULLOBJECT );
 		}
 		
 		if (entity.getApiUser().getDisplayName().isEmpty()) {
-			throw new Exception("The API user display NAME is empty!");
+			throw new UniversityBaseException( String.format(Constants.NULLOBJECTMESSAGEFORMATTED, "API user display name","ApiUser")
+					  + " ----> [ " + this.toString() + " ]", 
+					ErrCode.NULLOBJECT );
 		}
 		
 		result.setDepartmentId(entity.getDepartment().getId());
