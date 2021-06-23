@@ -4,10 +4,8 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Set;
 
-import org.apache.log4j.Logger;
-
-
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 
@@ -34,7 +32,8 @@ public class Utils {
 	
 	public static void log(String errorMessage, ErrCode errCode) {
 		
-		Logger logger = Logger.getLogger(Utils.class);
+		//Logger logger = Logger.getLogger(Utils.class);
+		Logger logger = LoggerFactory.getLogger(Utils.class);
 		
 		switch(errCode) {
 		

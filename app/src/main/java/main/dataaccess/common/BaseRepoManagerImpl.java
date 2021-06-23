@@ -5,7 +5,8 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.util.DefaultPrettyPrinter;
@@ -21,7 +22,7 @@ public abstract class BaseRepoManagerImpl<PK, ENT> implements BaseRepoManager<PK
 	protected abstract Map<PK, ENT> getDataSource();
 	protected abstract String getPath();
 	protected abstract Class<?> getClazz(); 
-	protected static Logger logger = Logger.getLogger(BaseRepoManagerImpl.class);
+	protected static Logger logger = LoggerFactory.getLogger(BaseRepoManagerImpl.class);
 	
 	@Override
 	public ENT insert(ENT entity) {
